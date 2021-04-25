@@ -17,8 +17,7 @@ class RefsComponent extends Component {
 
   componentDidMount() {
     if (this.cbRef) {
-        this.cbRef.focus()
-     // this.cbRef.focus();
+      this.cbRef.focus();
     }
     /*  this.inputRef.current.focus(); */
   }

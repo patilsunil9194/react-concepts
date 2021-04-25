@@ -11,3 +11,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - React.memo is a higher order component. 
  - If your component renders the same result given the same props, you can wrap it in a call to React. memo for a performance boost in some cases by memoizing the result. 
  - This means that React will skip rendering the component, and reuse the last rendered result.
+
+## Refs
+ - Refs make it possible to access DOM nodes directly within React
+ - Refs are created using React.createRef() and attached to react elements via the refs attribute.
+ - They are used in cases where we want to change the value of a child components without use of props and all

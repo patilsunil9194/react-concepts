@@ -9,6 +9,8 @@ import Hero from "./components/ErrorBoundary/Hero";
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 import ClickCouter from "./components/HOC/ClickCouter";
 import HoverCounter from "./components/HOC/HoverCounter";
+import ComponentC from "./components/Context/ComponentC";
+import { UserProvider } from "./components/Context/userContext";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -44,8 +46,12 @@ function App() {
         <Hero heroName="Krissh" />
         <Hero heroName="Joker" />
       </ErrorBoundary> */}
-      <ClickCouter name="Sunil PAtil"/>
-      <HoverCounter name="Sunil PAtil"/>
+      {/*    <ClickCouter name="Sunil PAtil"/>
+      <HoverCounter name="Sunil PAtil"/> */}
+      {/* Context  */}
+      <UserProvider value="Sunil PAtil">
+        <ComponentC />
+      </UserProvider>
     </div>
   );
 }
